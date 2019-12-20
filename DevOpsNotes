@@ -1,0 +1,663 @@
+Part 1: Intro to DevOps
+
+    **What is DevOps?**
+        Tools, methods and processes that enable collaboration among all professionals in an IT shop and their customers 
+        in the business to increase the velocity and reliability of value delivery to the business.
+
+    **High-Performing Teams -> Better Throughput and Stability!**
+        Deployment Frequency, Lead Time for Changes, Mean Time to Recover (MTTR), Change Failure Rate
+
+    **High-Performing Teams -> Automatic, Less Manual!**
+        Configuration Management, Testing, Deployments, Change Approval Processes
+
+    **High-Permance Benefits**
+        Quantity of products or services
+        Operating Efficiency
+        Customer Satisfaction
+        Quality of Products or Services Provided
+        Achieving Organizational and Mission Goals
+        Measures that demonstrate to external parties whether or not the organization is achieving intended results
+
+    **Loosely-Coupled Architecture & Teams**
+        The biggest contributor to continuous delivery - even bigger than test and deployment automation - is whether a team
+        can do various tasks such as making large scale changes to the system design, deploy and release on demand, and
+        perform deployments during normal business hours without permissions from outside teams, appreciable downtime 
+        or an integrated test environment.
+
+    **High-Performance is Predicted by Transformational Leadership**
+        Personal Recognition, Supportive Leadership, Intellectual Stimulation, Inspirational Communication, Vision
+            -> Lean Product Management
+            -> Continuous Delivery
+                -> Organizational Performance
+                -> Non-Commercial Performance
+                -> IT Performance
+
+
+    **Lean Product Management**
+        Team Experimentation, Working in Small Batches, Gathering and Implementing Customer Feedback
+
+        Lean Product Management has a reciprocal relationship with IT Performance
+        
+        "Team Experimentation" = Empowerment
+            -Try out new ideas and create & update specifications
+            -Without approval from outside the team
+    
+    **Lifecycle - Points of Pain**
+        What does DevOps focus on?
+
+        Examples: Test Automation, Time to Deploy, Cross-Team Collaboration, \\Too Many Approvals,
+        \\Meetings, Find Things You Need (KBA), Documents, Downtime to Deploy (COTS)
+    
+    **The Core Chronic Conflict**
+        Two Simultaneous Goals:
+        (DEV) Respond to Rapidly Changing Needs VS (OPS) Provide Stable, Reliable, Secure Service
+
+    **Net Effect of DevOps**
+        One IT organization with a single set of shared goals 
+            -Culture of communication & collaboration
+            -Automation to increase velocity and consistency and reduce effort, risk and cost
+            -Samller, more frequent releases
+            -Improved quality, visibility, and agility
+        So we can be responsive to our customers' Needs
+            -Time to market/time to value
+            -Ability to adapt to business conditions
+            -Innovation
+        IT doesn't just support the business - IT is the business!!!
+
+    **Business Value of DevOps**
+        Costs Avoided
+            -Excess Rework
+            -Downtime reduced
+        Reinvested
+            -Accelerate time to market
+            -Gain business intelligence
+            -Improve customer engagement & retention
+
+    **History of DevOps**
+        Patrick DeBois - The Father of DevOps (2007)
+        The term/word DevOps was coined in 2009.
+        Twitter - #DevOps
+            DevOpsDays in Seattle ~ Every Year!
+                Nov 6th, World's Largest DevOps Conference - ONLINE AND LIVE 
+                Keynote from Patrick DeBois (alldaydevops.com)
+        Read - "The Phoenix Project" by Gene Kim
+        Read - "The DevOps Handbook" by Gene Kim, Patrick DeBois
+
+        Early Key Points from "10+ Deploys Per Day"
+            -Automated Infrastructure
+            -Shared version control
+            -One step build and deploy
+            -Feature flags
+            -Shared metrics
+            -IRC and IM robots
+
+            -Respect
+            -Trust
+            -Healthy attitude about Failure
+            -Avoiding Blame
+        
+        Cameron Bates Prediction - "By 2015, DevOps will evolve from a niche strategy employed by
+        large cloud providers into a mainstream strategy employed by 20% of Global 2000 organizations."
+
+        DevOps Collective Body of Knwledge (CBoK) has grown from these prior movements:
+
+        -W Edwards Deming (1900-1993)
+            Greatest quality guru of the 20th century
+            Articulated the 14 Points (Check Notes)
+            Built on the work of Waler A Shawhart
+            Laid the foundations for
+                -Total Quality Management
+                -The Lean Movement 
+                -The Toyota Production System
+        -Total Quality Management (TQM)
+            Developed for the US Navy (1970-80s)
+            Response to Japan's quality supremacy
+            Based on the work of W Edwards Deming
+            TQM Key Concepts:
+                -Quality is defined by customers' requirements
+                -Top management has direct responsibility for quality improvement
+                -Increased quality comes from systematic analysis and improvement of work processes
+                -Quality improvement is a continuous effort and conducted throughout the organization
+        -The Lean Movement
+            Codified in the Toyota Productions System (1980s)
+                -Value Stream Mapping
+                -Kanbans
+                -Major Tenets:
+                    -Short Lead Time is the best predictor of quality, customer satisfactions
+                    and employee happiness
+                    -Small Batch Size is the best predictor of short lead times
+                -The Improvement Kata
+        -Toyota Production System
+            Three types of Waste
+                -Muda: "futility; uselessness; idleness; superfluity; waste; wastage; wastefullness"
+                    -Unnecessary Waste - Target to eliminate
+                    -Contributing Waste - Target to minimize
+                -Muri: "unreasonableness; impossible; beyond one's power; too difficult; by force;
+                perforce; forcibly; compusorily; excessiveness; immoderation"
+                -Mura: 'unevenness; irregularity; lack of uniformity; nonuniformity; inequality"
+            8 Wasters
+                -Defects
+                -Overproduction
+                -Waiting
+                -NonUtilized Talent
+                -Transportation
+                -Inventory
+                -Motion
+                -Extra Processing
+        -Agile Development & Agile Infrastructure movements
+            The Agile Manifesto (2001): We are uncovering better ways of developing software
+            by doing it and helping others do it. Through this work we have come to value:
+                -Individuals and Interactions OVER Processes and Tools
+                -Working Software OVER Comprehensive Documentation
+                -Customer Collaboration OVER Contract Negotiation
+                -Responding to Change OVER Following a Plan
+            -Agile vs. Traditional Processes
+                Scrum (iterative process)
+                Kanban (continuous flow)
+                Scaled Agile Frameworks
+                vs. Traditional (Waterfall)
+                    -Requirements -> Design -> Code -> Test
+            -Agile Self-Organizing Team
+                Scrum Master 
+                    -The Team
+                    -The Process
+                Product Owner 
+                    -Customer Engagement
+                    -Product Backlog
+                Tech Contributors
+                    -Technical Excellence
+                    -Product Delivery
+        -Continuous Delivery Movement
+            Continuous Integration
+                -> Continuous Delivery
+                    -> Continuous Deployment
+
+            
+    **IT Service Management (ITSM)**
+
+        ITIL (IT Infrastructure Library): A framework of good practice in IT Service Management (not a standard)
+
+            -ISO 20000: A standard based on ITIL guidance
+            -Service: A means of delivering value to customers by facilitating outcomes
+            customer want to achieve without the ownership of specific costs and risks
+            -Service Management: a set of sepcialized organizational capabilities for
+            providing value to customers in the form of services
+            -IT Service: A service provided by an IT service provider - made up of a 
+            combination of information technology, people and processes.
+            -Agile Service Management: ITSM adapted to conform to Agive Values and Principles
+
+        DevOps is Agile Service Management & is fully compatible with ITIL.
+    **ITIL & DevOps**
+        Service Strategy: Define how to meet IT's customers' business outcomes
+        Service Design: Design IT Services, practices, processes & policies to realize the Service Strategy,
+                        to facilitate service introduction, and to ensure quality service delivery, customer
+                        satisfaction, and cost-effective service provision
+        Service Transition: Ensure new, modified or retired services meet expectations, per the Service
+                            Strategy & Service Design
+        Service Operation: Coordinate and carry out activities and processes to deliver and manage
+                            services, and to manager the technology used to deliver & support services.
+        Continual Service Improvement: Align IT services to business need thru service improvements
+                                        to ensure effective & cost-effectives services & processes.
+    
+    **End Goals of DevOps**
+        Transform IT into a strategic enabler of organizational success.
+        Increase velocity and reduce risk from:
+            -IT's response to changing business Needs
+            -Development and deployment of software
+            -Deployment and maintenance of Infrastructure
+        DevOpsValues
+            -Culture
+            -Automation
+            -Lean
+            -Measurement
+            -Sharing
+
+Part 2: Maturing a DevOps Practice in the Enterprise
+
+    **DevOps & Organizational Culture**
+        DevOps pushes us toward
+            -Customer/Business/Outcome focus
+            -Collboration, sharing and visibility
+            -Cross-functional teams & high-Trust
+            -Proactive, courageous responsibility
+            -Automation changes people's jobs
+            -New processes & work relationship
+            -Quality & Security focus for all
+            -Small batches, continuous processes
+            -Continuous learning & improvement
+            -Failure = Opportunity to Improve
+            -Failure != Reason to Blame
+            -Potential Change Fatigue
+
+        Elements of DevOps Culture
+            -Shared vision, goals, incentives
+            -Open, honest, 2-way communication
+            -Safety & Pride of workmanship
+            -Transparency, Respect, Trust
+            -Data-Driven Actions
+            -People empowered & no Feature
+            -Recognition of contributions
+            -Continual Improvement through:
+                Learning and Practicing
+                Reflection
+                Experimentation
+                Informed Risk-Taking
+
+    **Patterns You Can Follow**
+        Use Lean Startup Teams (e.g. DevOps team)
+        Automate Everything You Can
+        Reserve 20% of effort for improvement
+
+    **Collaboration Tools**
+            -Slack
+            -Cisco Spark
+
+        Collaborative Management
+            -Jira
+            -Trello
+        
+        Collborative Prototyping & Workflow Management
+            -Invision
+
+    **The Involvement Principle**
+        The people who are involved in the work must be involved in changing the process
+            -Collboration is key to conflict resolutions.
+
+    **Information Security: Everyone's Job Everyday**
+        DevOps is INCOMPATIBLE with:
+            -InfoSec as a stand-alone silo of activity
+            -Security Checks at the end of the process
+            -"Security is someone else's responsiblity"
+        DevOps REQUIRES:
+            -Collaboration with Security Specialists
+            -Security Checks built into the process
+            -"Security is everyone's responsibility"
+    
+    **Scaling DevOps in the Enterprise**
+        (VIEW MODEL IN GUIDE)
+
+        -Innovators (Techies - "Just try it.")
+        -Early Adopters (Visionaries - "Get ahead of the herd.")
+        -THE CHASM
+        -Early Majority (Pragmatists - "Stick with the herd.")
+        -Late Majority (Conservatives - "Stick with what's proven.")
+        -Laggards (skeptics - "Just say no.")
+
+            -In addition to starting with the right people, a DevOps effort should pilot with small nimble
+            efforts that can demonstrate success quickly, but significant enough that the success is noticed
+            and notable.
+
+            -The best "DevOps" professionals have:
+                -Knowledge of Business priorities and processes, and business/customer-focused
+                -Technical knowledge and skills
+                -Soft skills (collaboration, communication, teaming, empathy, transparent)
+                -Ability to self-manage, take initiative, manage time
+                -Adaptable, engaged and curious
+                -Serious about craftsmanship and data-Driven
+
+        Provide Support to Cross the CHASM
+            -Leadership Actions
+                -Actively focus on culture changes
+                -Provide funding & resources
+                -Create immersion opportunities
+                -Encourage and reward new behaviors
+            -Technical Expert Actions
+                -Standardize tools, practices, and approaches
+                -Establish knowledge-sharing strategies
+                -Publish how-to's and make artifacts available
+                -Train, help, asnwer questions
+
+Part 3: The DevOps Journey (The Three Ways)
+
+    **Gene Kim's Three Ways**
+        The First Way: Optimize Flow
+        The Second Way: Amplify Feedback
+        The Third Way: Continual Learning & Experimentation
+
+    **THE FIRST WAY: Optimizing Flow**
+
+        Principles of Flow
+            -Make Work Visible (e.g. ChatOps)
+            -Limit Work in Process (WIP)
+            -Reduce Batch Sizes
+            -Optimize the Process to Reduce the Number of Handoffs
+            -Continually Identify and Elevate Constraints (Theory of Constraints)
+            -Eliminate Waste in the Value Stream
+
+        Infrastructure As Code
+            -Apply processes and tools that work well in Dev to Ops 
+            -Share version control repositories and processes for Dev & Ops 
+            -Reduce the difference between Dev and Ops jobs
+            -Establish an integrated tool chain 
+            -Provide visibility about application - infrastructure dependencies 
+            -Allow testing, staging, simulation of production environments
+            earlies in Dev projects
+
+            Results:
+                Infrastructure is easier to rebuild than to repair
+                    -Physical Systems - Wipe and Reconfigure
+                    -Virtual & Cloud - Destroy and Recreate
+                
+                The Ideal Continuity Plan:
+                    "Enable the reconstruction of the business from nothing but a source Code
+                    repository, an application data backup , and bare metal resources."
+                                                -Adam Jacob, CTO Chef
+
+                Effective and efficient development teams
+        
+        Infrastructure Configuration Management
+            -Automate configuration of systems & devices
+                -Remove human error as a cause of incidents
+                -Increase deployment velocity
+                -Enable self-service for Dev teams
+            -Automate configuration verification
+                -Establish & enforce standards
+                -Audit and provide visibility
+                -Automatically correct deviations
+
+        Configuration Management Tools
+            The Big Names:
+                -Puppet
+                -Ansible
+                -Chef
+                -Seattle
+
+            Set Policy -> Execute Policy -> Audit Against Policy -> Report Against Policy -> Set Policy -> Repeat
+
+        The Deployment Pipeline
+            -The steps to build, test and deploy:
+                -Application software
+                -Systems or servers
+                -Configuration updates (e.g. firewalls)
+            -Automating the Deployment Pipeline:
+                -Improve Flow & velocity
+                -Reduces human error
+                -Enables needed testing
+
+                Deployment Pipeline Example:
+                Application Software
+                    -Commit Stage (New or Changed Source Code)
+                        -Compile 
+                        -Unit Test 
+                        -Code Analysis
+                        -Built Installers
+                    -Automated Acceptance Test
+                    -Automated Capacity Testing
+                    -Manual Testing
+                        -Showcases
+                        -Exploratory Testing
+                    -Release
+        Deployment Tools
+            The Big Names:
+                -Jenkins
+                -Capistrano
+                -TFS 
+                
+            Define Deployment Process -> Commit: Trigger Deployment -> Deploy -> Report Success or Failure -> Repeat
+
+        Shared Version Control 
+            -Single source of truth for all teams (Dev, QA, InfoSec, Ops)
+            -All artifacts in one repository
+                Application Software
+                    -Source Code
+                    -Test Scripts
+                Infrastructure Management
+                    -Configuration Files 
+                    -Deployment Scripts 
+                Database Administration 
+                    -Databases 
+                    -Update Scripts
+                Third Party Artifacts 
+                    -External Libraries 
+                    -Open Source Components
+
+        Version Control Tools
+            The Big Names:
+                -Github 
+                -Git 
+                -TFS 
+
+            Artifact Management:
+                -Artifactory 
+                -Sonatype
+
+            Auditable Check In -> Commit -> Available to Everyone -> Rollback to prior version -> Repeat
+
+            Test Automation Pyramid
+                (VIEW MODEL IN GUIDE)
+                -Manual Testing
+                -Automated GUI Testing
+                -Automated Functional Testing via APIs
+                -Automated Service, API, Interface Testing
+                -Automated Unit-Testing (True Unit Testing)
+
+            API = Application Programming Interface: "a set of subroutine definitions, communication
+            protocols, and tools for building software. In general terms, it is a set of clearly defined
+            methods of communication among various components." (Wikipedia)
+        
+         Build Quality In
+            "Cease dependence on mass inspection to achieve quality. Improve the process and build quality
+            into the product in the first place" - W. Edwards Deming
+
+            Shift Left Principle -> Catch defects sooner in the Lifecycle
+                -The automotive industry tests their engines before moving them on the assembly line.
+            Features are not done until they have a test.
+                -Practice Test Driven development to find faults as early as possible.
+            Small Frequent Changes
+                -Defects are easier to find since bug causes can be isolated.
+            Release Frequently
+                -Large infrequent releases creates an opportunity for escaped bugs.
+            Improve automated testing with every fixed escape
+                -Improves coverage and quality over time
+
+            Test Driven Development (TDD) is an Agile practice where the development team writes all of 
+            the automated tests for a User Story before doing the coding, then uses those tests as the
+            basis for doing the coding.
+
+        Containerization
+            In Shipping: A system by which merchandise of any kind if contained in standard shipping container that can
+            be attached to and trasnsported on any transport modality (truck, train, ship, plane) that has the 
+            necessary connectors.
+
+            In IT: A mechanism by which an application and its dependencies are encapsulated in a software "container"
+            that can be installed and run on any computer (with any operating system) that has the necessary
+            interface hooks.
+
+        Containerization Tools
+            -Docker (www.docker.com)
+            -Team Foundation Server (TFS) (visualstudio.com)
+
+        SOA - Service-Oriente Architecture
+            Benefits of SOA
+                -Work in small batches
+                -Apply Object-Oriented Principles
+                -Limit dependencies
+            
+            Microservices
+                -Services are very small and focused
+                -Single purpose, simple interface
+                -Maximize SOA Benefits
+
+    **THE SECOND WAY: Amplify Feedback**
+
+        Working Safely Within Complex Systems
+            These conditions are required:
+                -Manage in a way that reveals errors in design and Operation
+                -Swarm and resolved problems resulting in quick construction of new knowledge
+                -Exploit new local knowledge globally throughout the organization
+                -Create leaders who continue these conditions
+
+        Principles of Feedback
+            -See Problems as they occur
+            -Swarm and Resolve Problems to Build New Knowledge
+            -Keep Pushing Quality Closer to the Source
+            -Optimize for Downstream Work Centers
+
+        Telemetry
+
+            Telemetry: "An automated coomunications process by which measurements and other data are collected
+            at remote points and are subsequently transmitted to receiving equipment for monitoring."
+
+        Telemetry Principles
+            -Automate Telemetry
+            -Build Monitoring and Measurement In
+            -Use alerts to boost efficiency
+            -Make information visible to all
+
+        System Monitoring Tools
+            -Librato
+            -Monit
+            -Nagios
+            -PagerDuty
+
+        Log Aggregation
+            All logs -- Audit records, Transaction logs, Intrusion alerts, Connection log, User activity,
+            various alerts/messages
+            From all source -- Firewalls, Routers/Switches, Web Servers, Business Applications, Databases, VPNs
+
+            Collect logs in raw format from multiple sources -> Centralize and normalize logs (Columnar/JSON/etc)
+            -> Analyze/Forecast business questions -> Monitor for specific behaviors -> Alery on undesired signals
+
+        Log Aggregation Tools
+            -Splunk
+            -ELK
+        
+        Use Telemetry to Anticipate Problems
+            Use statistical techniques to understand "normal", then address the "abnormal"
+                -e.g. Mean and Standard deviations
+
+        Feedback For Safe Deployment of Code
+            Actively Monitor key metrics immediately before and after each deploy
+                -Take action on unexpected changes
+
+        Manage the Service Until Stable
+            (VIEW MODEL IN GUIDE)
+            Creation -> Self-Run (6+ Months) -> SRE -> Self-Run -> SRE
+
+            Site Reliability Engineering (SRE) goes beyond mere operations. "Site Reliability Engineering is a
+            discipline that incorporates aspects of software engineering and applies them to IT operations problems.
+            The main goals are to create ultra-scalable and highly reliable software systems."
+        
+        Hypothesis-Driven Development
+            Backlog = Hypotheses not Requirements
+                -Implement a quick experiment 
+                -Monitor results in production 
+                -Adapt the backlog based on results 
+        
+    **THE THIRD WAY: Continual Learning and Experimentation**
+
+        Becoming a Learning Culture
+            "Failure is not a cause for blame, it is a vehicle for change, learning, and improvement."
+
+            Learning Culture:
+                -Daily learning is encouraged
+                -Training and educational opportunities abound
+                -What is learned is shared throughout the organization
+                -Mistakes and failures are an opportunity for the organization to improve.
+        
+            Simian Army - a sets of bots that continually test the resiliency of their systems
+                Chaos Monkey - intentionally injects failures in the production cloud
+                Chaos Gorilla - drops entire Amazon availability zones
+                Latency Monkey - introduces communication delays
+                Doctor Monkey - performs health checks on services
+                Conformity Monkey - looks for non-conforming instances
+                Security Monkey - disables instances with security vulnerabilities
+                10-18 Monkey - detects localization issues
+
+            "Safety culture is the collection of the beliefs, perceptions and values that employees share in relation
+            to risks within an organization." In IT, a Safety Culture results in practices like Blameless Postmortems,
+            avoid single points of failure, and collaboration.
+
+            Responses to Failure
+
+                -Blaming Culture : "Who causes the failure?" / Active-self protection / Information hidden /
+                Find the culprit / Correct the person / Learn to avoid responsibility
+
+                -Learning Culture : "What caused the failure?" / Active research / Information revealed /
+                Find the root cause / Correct the root cause / Learn to avoid failure
+
+                "Drive out fear."
+                "The worker is not the problem. The problem is at the top of management."
+                "Blame the process, not the people."
+                -W Edwards Deming
+
+        Becoming an Innovation Culture
+
+            Innovation Culture:
+                -Encourage calculated risk-taking
+                    -allow enigneers to try new ways to do things
+                -An Innovation Culture allows:
+                    -orders of magniture improvements
+                    -occasional failures
+                -Accept that failure is inevitable!
+            
+            Inject Resilience Patterns into Our Daily Work
+                Normal Daily Work
+                (not in response to failure)
+                    -Reduce Lead times
+                    -Increase test coverage 
+                    -Improve productivity 
+                    -Refactor for Resilience 
+                        -Systems & Applications
+                        -Processes & Methods 
+                
+                Special Exercises
+                "Game Day"
+                    -Rehearse large scale failures
+                    -Inject faults (e.g. Chaos Monkey)
+
+            Transform Local Discoveries into Global improvements
+                Knowledge Sharing
+                (Searchable Repositories)
+                    -Postmortem Reports (Blameless)
+                        -Problem Root causes
+                        -resolution techniques
+                    -Effective practices 
+                    -Problem avoidance techniques 
+                
+                Shared Artifacts
+                (Common repositories)
+                    -Source Code
+                    -Test cases 
+                    -Scripts 
+                    -Configuration files 
+            
+            Reserve Time to Create Organizational Learning and Improvement
+                -Special Days dedicated to Improvement 
+                    -Improvement (Kaizen) Blitzes
+                    -Hackathons 
+                -Enable Everyone to Teach & Learn
+                    -Regular Teaching times 
+                    -DevOps Days conferences 
+                -Establish Internal Consultants & Coaches 
+                    -Full-time jobs or additional responsibilities 
+                
+        Leaders Reinforce a Learning Culture 
+            Create the necessary conditions 
+                -Make postmortems "Blameless"
+                -Value learning and problem solving 
+                -Set strategic improvement goals 
+                -Teach and Coach team members:
+                    -Problem solving skills
+                    -Experimentation techniques 
+        
+
+
+        
+
+
+
+
+        
+
+        
+        
+
+        
+
+
+
+
+    
+
+
